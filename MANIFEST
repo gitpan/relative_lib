@@ -1,0 +1,12 @@
+Build.PL			Run this first. Creates Build program
+Changes				What's changed? 
+GNUmakefile			Compatibilty for non-Perl users. Try: remake --tasks
+lib/relative_lib.pm		The CODE!
+MANIFEST			This list of files
+README.md			Overview in mark-down format
+t/00-load.t
+t/01-basic.t
+t/MyMod.pm
+t/testing/MyMod.pm
+META.yml
+META.json
