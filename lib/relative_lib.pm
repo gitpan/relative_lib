@@ -5,8 +5,7 @@ package relative_lib;
 no warnings 'redefine';
 
 use vars qw($VERSION);
-BEGIN { $VERSION      = '0.1'; }
-use constant VERSION => $VERSION;
+use version; $VERSION = '0.2';
 
 sub import {
     if (2 == scalar @_) {
@@ -14,7 +13,6 @@ sub import {
 	my ($package, $filename, $line) = caller(0);
 	my $dir = File::Basename::dirname($filename);
 	my $full_path = Cwd::abs_path(File::Spec->catfile($dir, $dir_suffix));
-	print "eval: ", sprintf("use lib '%s'", $full_path), "\n";
 	if ($full_path) {
 	    eval sprintf "use lib '%s'", $full_path;
 	}

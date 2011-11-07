@@ -1,4 +1,7 @@
 Revision history for use_relative
 
+0.2
+  - Small changes: remove debug statement and correct abstract grammar.
+
 0.1
   - First release
